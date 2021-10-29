@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "457730253711",
+    "project_id": "signalclone-ff024",
+    "storage_bucket": "signalclone-ff024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457730253711:android:41ae0b99f7cf53a36721fa",
+        "android_client_info": {
+          "package_name": "com.signalclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457730253711-gms3aavodh0uunalsml55vnfd3kob5qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQniILBxsGf6q8yu45yktOtMR-CTc4fQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457730253711-gms3aavodh0uunalsml55vnfd3kob5qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
