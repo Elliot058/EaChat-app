@@ -18,7 +18,7 @@ import {DarkTheme} from '@react-navigation/native';
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const {login} = useContext(AuthContext);
+  const {login, googleLogin} = useContext(AuthContext);
 
   const [data, setData] = React.useState({
     email: '',
@@ -144,6 +144,16 @@ const LoginScreen = ({navigation}) => {
               </Text>
             </TouchableOpacity>
           </View>
+
+          <View style={styles.brandButton1}>
+            <TouchableOpacity
+              style={styles.loginButton1}
+              onPress={() => googleLogin()}>
+              <Text style={{color: '#fff', fontSize: 16, fontWeight: 'bold'}}>
+                SignIn With Google
+              </Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </Animatable.View>
     </ScrollView>
@@ -182,7 +192,6 @@ const styles = StyleSheet.create({
   brandButton: {
     alignItems: 'center',
     justifyContent: 'space-evenly',
-    marginTop: 20,
     height: 80,
   },
   loginButton: {
@@ -191,6 +200,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#4632A1',
+    borderRadius: 30,
+  },
+  brandButton1: {
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    height: 80,
+  },
+  loginButton1: {
+    width: Dimensions.get('window').width / 1.3,
+    height: '60%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'powderblue',
     borderRadius: 30,
   },
 });
